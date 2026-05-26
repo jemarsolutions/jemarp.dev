@@ -82,12 +82,12 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-6 py-12 md:py-24 animate-in fade-in slide-in-from-bottom-8 duration-700">
-      <div className="flex flex-col md:flex-row gap-12 items-start mb-16">
+    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-24 animate-in fade-in slide-in-from-bottom-8 duration-700">
+      <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start mb-12 md:mb-16">
         
         {/* Left Column: Profile & Contact */}
         <div className="w-full md:w-1/3 shrink-0 flex flex-col items-center md:items-start text-center md:text-left">
-          <div className="h-48 w-48 rounded-3xl border border-neutral-200 dark:border-neutral-700 shadow-xl overflow-hidden mb-6">
+          <div className="h-40 w-40 sm:h-48 sm:w-48 rounded-3xl border border-neutral-200 dark:border-neutral-700 shadow-xl overflow-hidden mb-6">
             <img src="/me.png" alt="Jemar Paltingca" className="w-full h-full object-cover" />
           </div>
           <h1 className="text-3xl font-black tracking-tight text-neutral-900 dark:text-white mb-1">
