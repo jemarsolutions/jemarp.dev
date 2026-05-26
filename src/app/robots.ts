@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin/', '/api/'], // Block search engines from admin routes
     },
-    sitemap: 'https://jemar.dev/sitemap.xml',
+    sitemap: 'https://jemarp.dev/sitemap.xml',
   };
 }

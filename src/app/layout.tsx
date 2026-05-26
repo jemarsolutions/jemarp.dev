@@ -15,33 +15,43 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jemar.dev"),
+  metadataBase: new URL("https://jemarp.dev"),
   title: "Jemar | Senior Full-Stack Engineer",
-  description: "High-performance SPA developer portfolio specializing in Next.js, React, and modern web applications.",
-  keywords: ["Jemar", "Senior Software Engineer", "Next.js", "React", "Portfolio", "Web Developer"],
+  description:
+    "High-performance SPA developer portfolio specializing in Next.js, React, and modern web applications.",
+  keywords: [
+    "Jemar",
+    "Senior Software Engineer",
+    "Next.js",
+    "React",
+    "Portfolio",
+    "Web Developer",
+  ],
   openGraph: {
     title: "Jemar | Senior Full-Stack Engineer",
-    description: "High-performance SPA developer portfolio specializing in Next.js, React, and modern web applications.",
-    url: "https://jemar.dev",
-    siteName: "jemar.dev",
+    description:
+      "High-performance SPA developer portfolio specializing in Next.js, React, and modern web applications.",
+    url: "https://jemarp.dev",
+    siteName: "jemarp.dev",
     images: [
       {
         url: "/logo.png",
         width: 800,
         height: 600,
-        alt: "jemar.dev logo",
+        alt: "jemarp.dev logo",
       },
     ],
     locale: "en_US",
     type: "website",
   },
   alternates: {
-    canonical: "https://jemar.dev",
+    canonical: "https://jemarp.dev",
   },
   twitter: {
     card: "summary_large_image",
     title: "Jemar | Senior Full-Stack Engineer",
-    description: "High-performance SPA developer portfolio specializing in Next.js, React, and modern web applications.",
+    description:
+      "High-performance SPA developer portfolio specializing in Next.js, React, and modern web applications.",
     images: ["/logo.png"],
   },
 };
@@ -58,22 +68,25 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-screen flex flex-col m-0 p-0" suppressHydrationWarning>
+      <body
+        className="min-h-screen flex flex-col m-0 p-0"
+        suppressHydrationWarning
+      >
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              "name": "Jemar",
-              "url": "https://jemar.dev",
-              "jobTitle": "Senior Full-Stack Engineer",
-              "image": "https://jemar.dev/logo.png",
-              "sameAs": [
+              name: "Jemar",
+              url: "https://jemarp.dev",
+              jobTitle: "Senior Full-Stack Engineer",
+              image: "https://jemarp.dev/logo.png",
+              sameAs: [
                 "https://github.com/jemar",
-                "https://linkedin.com/in/jemar"
-              ]
-            })
+                "https://linkedin.com/in/jemar",
+              ],
+            }),
           }}
         />
         <MainAppLayout>{children}</MainAppLayout>

@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'jemar.dev | Portfolio',
-    short_name: 'jemar.dev',
+    name: 'jemarp.dev | Portfolio',
+    short_name: 'jemarp.dev',
     description: 'High-performance SPA developer portfolio specializing in Next.js, React, and modern web applications.',
     start_url: '/',
     display: 'standalone',

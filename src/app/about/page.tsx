@@ -5,7 +5,7 @@ import { PrintResumeButton } from "@/components/PrintResumeButton";
 import { Globe, Briefcase, Mail, MapPin, Phone, GraduationCap, Code2 } from "lucide-react";
 
 export const metadata = {
-  title: "About & Resume | jemar.dev",
+  title: "About & Resume | jemarp.dev",
   description: "Web/WordPress Developer & SEO Specialist",
 };
 

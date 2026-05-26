@@ -5,7 +5,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '',
     '/about',
   ].map((route) => ({
-    url: `https://jemar.dev${route}`,
+    url: `https://jemarp.dev${route}`,
     lastModified: new Date().toISOString(),
     changeFrequency: 'weekly' as const,
     priority: route === '' ? 1 : 0.8,

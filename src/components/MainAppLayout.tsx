@@ -25,7 +25,7 @@ export async function MainAppLayout({ children }: MainAppLayoutProps) {
             <div className="h-8 w-8 rounded-lg overflow-hidden shrink-0 border border-neutral-200 dark:border-neutral-800">
               <Image src="/logo.png" alt="Jemar" width={32} height={32} className="w-full h-full object-cover" />
             </div>
-            <div className="font-semibold tracking-tight">jemar.dev</div>
+            <div className="font-semibold tracking-tight">jemarp.dev</div>
           </div>
           
           <div className="px-4 pb-4">

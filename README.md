@@ -1,8 +1,8 @@
-# jemar.dev — Developer Portfolio & CMS
+# jemarp.dev — Developer Portfolio & CMS
 
 A high-performance, full-stack developer portfolio built with **Next.js 15 (App Router)**, featuring a custom headless CMS, an admin dashboard, a print-optimized resume, and advanced SEO capabilities.
 
-Live at: **[jemar.dev](https://jemar.dev)**
+Live at: **[jemarp.dev](https://jemarp.dev)**
 
 ---
 
@@ -60,8 +60,8 @@ Live at: **[jemar.dev](https://jemar.dev)**
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/jemar/jemar.dev.git
-cd jemar.dev
+git clone https://github.com/jemarsolutions/jemarp.dev.git
+cd jemarp.dev
 npm install
 ```
 
@@ -153,7 +153,7 @@ src/
 3. Add the following **Environment Variables** in Vercel's project settings:
    - `DATABASE_URL`
    - `NEXTAUTH_SECRET`
-   - `NEXTAUTH_URL` → `https://jemar.dev`
+   - `NEXTAUTH_URL` → `https://jemarp.dev`
 4. Deploy and link your custom domain
 
 ---
