@@ -27,7 +27,7 @@ export function DashboardView({ projects }: DashboardViewProps) {
   );
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-6 py-12">
+    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
       <header className="mb-12">
         <h1 className="text-4xl md:text-5xl font-black tracking-tight text-neutral-900 dark:text-white mb-4">
           Selected Works.
@@ -67,7 +67,7 @@ export function DashboardView({ projects }: DashboardViewProps) {
       </div>
 
       {/* Grid */}
-      <motion.div layout className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <motion.div layout className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-7 lg:gap-8">
         <AnimatePresence mode="popLayout">
           {filteredProjects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
@@ -87,7 +87,7 @@ export function DashboardView({ projects }: DashboardViewProps) {
 
       {/* Epic Footer CTA */}
       <div className="mt-24 pt-12 border-t border-neutral-200 dark:border-neutral-800">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-black tracking-tight text-neutral-900 dark:text-white mb-4">
               Let's build something <span className="text-brand">epic</span> together.
