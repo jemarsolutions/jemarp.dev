@@ -3,6 +3,7 @@ import { Project } from "@/types";
 import { deleteProject } from "@/actions/projects";
 import Link from "next/link";
 import { Plus, Trash2, Edit } from "lucide-react";
+import DeleteConfirm from "@/components/DeleteConfirm";
 
 export const dynamic = "force-dynamic"; // Always fresh data for admin
 
@@ -99,10 +100,10 @@ export default async function AdminDashboard() {
                   </td>
                   <td className="px-6 py-4 text-right">
                     <div className="flex justify-end gap-3">
-                      <button className="text-neutral-400 hover:text-brand transition-colors">
+                      <Link href={`/admin/edit/${project.id}`} className="text-neutral-400 hover:text-brand transition-colors">
                         <Edit className="h-4 w-4" />
-                      </button>
-                      <form action={deleteProject.bind(null, project.id)}>
+                      </Link>
+                      <form data-confirm="true" action={deleteProject.bind(null, project.id)}>
                         <button type="submit" className="text-neutral-400 hover:text-red-500 transition-colors">
                           <Trash2 className="h-4 w-4" />
                         </button>
@@ -122,6 +123,7 @@ export default async function AdminDashboard() {
           </table>
         </div>
       </div>
+      <DeleteConfirm />
     </div>
   );
 }

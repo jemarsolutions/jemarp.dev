@@ -2,6 +2,7 @@ import pool from "@/db/index";
 import { Inquiry } from "@/types";
 import { deleteInquiry, markInquiryRead } from "@/actions/inquiries";
 import { Trash2, CheckCircle, MailOpen } from "lucide-react";
+import DeleteConfirm from "@/components/DeleteConfirm";
 
 export const dynamic = "force-dynamic";
 
@@ -68,7 +69,7 @@ export default async function AdminInquiriesPage() {
                       </button>
                     </form>
                   )}
-                  <form action={deleteInquiry.bind(null, inquiry.id)}>
+                  <form data-confirm="true" action={deleteInquiry.bind(null, inquiry.id)}>
                     <button type="submit" title="Delete message" className="p-2 rounded-lg text-neutral-400 hover:text-red-500 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors">
                       <Trash2 className="h-5 w-5" />
                     </button>
@@ -83,6 +84,7 @@ export default async function AdminInquiriesPage() {
           ))
         )}
       </div>
+      <DeleteConfirm />
     </div>
   );
 }
