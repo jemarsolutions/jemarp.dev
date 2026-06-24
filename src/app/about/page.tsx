@@ -11,8 +11,9 @@ export const metadata = {
 
 export default function AboutPage() {
   const skills = [
-    "Next.js", "React", "JavaScript", "TypeScript", "HTML", "CSS", "Tailwind CSS",
+    "Next.js", "React", "JavaScript", "TypeScript", "Python", "FastAPI", "HTML", "CSS", "Tailwind CSS",
     "WordPress", "Elementor", "Shopify", "ACF", "Custom Coding", 
+    "n8n", "Make", "Zapier", "AI/LLM Integration", "Workflow Automation",
     "SEO", "GA4", "GSC", "GBP", "Ahrefs", "Semrush",
     "Google Ads", "Meta Ads", "MailChimp", "ConvertKit", "Hubspot", "CRM Tools",
     "Git", "GitHub", "API", "VS Code", "Adobe Suite", "Google Suite", "Capcut", "Critical Thinking"
@@ -23,7 +24,7 @@ export default function AboutPage() {
       role: "Frontend Engineer (Next.js / React)",
       company: "Freelance & Independent Projects",
       date: "01/2024 - 03/2026",
-      desc: "Architected and developed high-performance web applications using Next.js (App Router), React, and Tailwind CSS. Built custom admin dashboards, implemented Server Actions, and integrated headless architectures with PostgreSQL databases."
+      desc: "Architected and developed high-performance web applications using Next.js, React, and Tailwind CSS. Built custom admin dashboards, developed backend APIs using Python and FastAPI, and integrated AI/LLM tools. Designed and integrated automated workflows for external systems like CRM, PM, and ERP."
     },
     {
       role: "Web/WordPress Developer",
@@ -35,7 +36,7 @@ export default function AboutPage() {
       role: "Website Onboarding Specialist",
       company: "Housecall Pro",
       date: "08/2024 - 01/2025",
-      desc: "Handling pro requests involving website edits, onboarding processes, and resolving website development issues."
+      desc: "Handled pro requests involving website edits, onboarding processes, and resolving website development issues. Designed and deployed automated workflows using Zapier to sync onboarding data with internal PM and CRM tools."
     },
     {
       role: "WordPress and Shopify Developer",
@@ -53,7 +54,7 @@ export default function AboutPage() {
       role: "Client Based WordPress Dev",
       company: "RipplePop LLC",
       date: "09/2022 - 12/2025",
-      desc: "Developed client websites from scratch and implemented new features on existing client platforms."
+      desc: "Developed client websites from scratch and implemented new features on existing client platforms. Built custom integrations with external systems like CRM and ERP software using n8n and Make."
     },
     {
       role: "Jr. WordPress Developer",
